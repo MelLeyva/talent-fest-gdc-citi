@@ -1,5 +1,5 @@
 import React from 'react'
-import Transfers from '../pages/Transfers'
+import { Link } from 'react-router-dom'
 
 const SideBar = () => {
     return (
@@ -12,9 +12,9 @@ const SideBar = () => {
             <div className="container d-flex"> 
 
             <ul className="navbar-nav w-70"> {/* "nav nav-pills nav-fill" */}
-            <li className ="nav-item"><p className="nav-link active">Transferir o pagar</p></li>
+            <li className ="nav-item"><Link to="/Services"><p className="nav-link active">Transferir o pagar</p></Link></li>
             <hr />
-            <li className ="nav-item"> <p className="nav-link active">Dar de alta cuenta, tarjeta, servivio, otros</p></li>
+            <li className ="nav-item"><Link to="Register"><p className="nav-link active">Dar de alta cuenta, tarjeta, servivio, otros</p></Link></li>
             <hr />
             <li className ="nav-item"><a className="nav-link disabled" href="#">Modificar altas</a></li>
             <hr />
@@ -32,7 +32,7 @@ const SideBar = () => {
             </ul>
             </div> 
       {/*   </div> */}
-        <Transfers />
+        
         </section>
         </>
     )

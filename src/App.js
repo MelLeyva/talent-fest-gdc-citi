@@ -9,8 +9,7 @@ import "./Scss/Layout/footer.scss";
 import "./Scss/Layout/sidebar.scss";
 import "./Scss/Layout/HeaderNav.scss";
 import Services from "./pages/Services";
-import Transfers from "./components/Transfers";
-import Altas from "./components/Altas";
+import DataRegister from './components/Forms/registration.js/DataRegister'
 
 function App() {
   return (
@@ -20,8 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="Services/*" element={<Services />}>
-            <Route path="Transfers" element={<Transfers />} />
-            <Route path="Altas" element={<Altas />} />
+            <Route path="Register" element={<DataRegister />} />
           </Route>
         </Routes>
         <Footer />
