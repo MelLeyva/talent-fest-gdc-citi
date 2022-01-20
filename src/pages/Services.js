@@ -5,7 +5,13 @@ import { Outlet } from 'react-router-dom'
 const Services = () => {
     return (
         <>
-        <Outlet /> 
+        <section className='lateral-btns-home-container'>
+                <button><i className="bi bi-credit-card"/>Trasferencias</button>
+                <button><i className="bi bi-file-earmark-text"/>Alstas de cuentas</button>
+                <button><i className="bi bi-bell"/>Comprobantes</button>
+        </section>
+        {/* <SideBar /> */}
+        <Outlet />
         </>
 
     )
